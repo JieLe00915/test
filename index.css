@@ -1,0 +1,771 @@
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+.clear::before{
+    content: "";
+    display: block;
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+
+html,body,.box{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    background-color: #F0F0F0;
+}
+.box{
+    min-width: 1420px;
+    background-size: cover;
+    background:url(https://9yin.woniu.com/static/web201588/images/bg.jpg?v1) no-repeat top center;
+}
+.nav-bg{
+    height: 66px;
+    overflow: hidden;
+}
+/* 导航栏 移入 动画弹出效果 下拉框 高度为0 overflow：hidden */
+.nav-bg-yc{
+    width: 1920px;
+    height:0px;
+    background-color:rgba(244,244,244,0.8);
+    position: absolute;
+    top:64px;
+    left: 0;
+    overflow: hidden;
+    transition: 2s;
+   
+}
+.nav-bg:hover div{
+    height: 182px;
+}
+.bg-data{
+    width:880px ;
+    height: 160px;
+    margin: auto;
+    padding-top: 20px;
+    /* background-color: royalblue; */
+} 
+.bg-data ul{
+    float: left;
+    padding: 0 12px;
+    margin-right: 14px;
+    font-size: 14px;
+}
+.bg-data ul li{
+   margin-bottom: 8px;
+}
+.bg-data ul li:hover{
+    color: #E72E00;
+    cursor: pointer;
+}  
+.nav-bg-first{
+ 
+    margin-top: 23px;
+    width:100%;
+    height: 41px;
+    padding-left: 500PX;
+    line-height: 41px;
+    box-sizing: border-box;
+    background: url(https://9yin.woniu.com/static/web201588/images/navBg.png) center top repeat-x;
+}
+.nav-bg-first li{
+    height: 36px;
+    float: left;
+    margin-left: 30px;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+}
+.nav-bg-first li:hover a{
+    color: red;
+}
+
+.body{
+    position:absolute;
+    top: 600px;
+    left: 300px;
+    width: 70%;
+    height: 450px;
+    /* background-color: blanchedalmond; */
+    margin: auto;
+    /* margin-bottom:20px; */
+}
+.body-xz-one{
+    height: 440px;
+    width: 200px;
+    margin-right: 29px;
+    float: left;
+}
+.body-xz-img{
+    width: 200px;
+    height: 180px;
+    background: url(./img/icon.jpg) no-repeat;
+
+    margin-bottom: 20px;
+}
+.body-xz-img a button{
+    width: 200px;
+    height:70px;
+    margin-top: 24px;
+    line-height: 70px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+    position: relative;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.body-xz-img a p{
+    font-size:12px;
+    color: #ffffff;
+    opacity: 0.5;
+    width: 200px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    margin-top: -14px;
+}
+.body-xz-img span:nth-child(2){
+    display:block;
+    width: 99px;
+    height: 41px;
+    float: left;
+    line-height: 41px;
+    text-align: center;
+    color: #e4e7e8;
+    font-size: 12px;
+
+}
+.body-xz-img span:nth-child(3){
+    display: inline-block;
+    width:101px;
+    height: 41px;
+   
+    line-height: 41px;
+    text-align: center;
+    color: #e4e7e8;
+    font-size: 12px;
+}
+.body-xz-img span:nth-child(4){
+    display: inline-block;
+    width: 100px;
+    height: 38px;
+
+    line-height: 41px;
+    text-align: center;
+    color: #e4e7e8;
+    font-size: 12px;
+}
+.body-xz-img span:nth-child(5){
+    float: right;
+    display: block;
+    width: 100px;
+    height: 38px;
+    /* background-color: tomato; */
+    line-height: 41px;
+    text-align: center;
+    color: #e4e7e8;
+    font-size: 12px;
+}
+.body-xz-one img{
+    display: block;
+    width: 200px;
+    height: 240px;
+    /* background-color: springgreen; */
+    /* position: relative; */
+}
+.body-shangc{
+    width: 200px;
+    height: 55px;
+    /* background-color: thistle; */
+    position: absolute;
+    top:46.5%;
+}
+.body-shangc p:nth-child(1){
+    width: 100px;
+    height: 55px;
+    /* background-color: turquoise; */
+    padding-left:17px;
+    font-size: 18px;
+    color: #000000;
+    line-height: 55px;
+    text-align: center;
+    float: left;
+}
+.body-shangc p:nth-child(2){
+    width: 43px;
+    height: 55px;
+    font-size: 14px;
+    /* background-color: blue; */
+    float: right;
+    line-height: 55px;
+    text-align: center;
+    color: #525151;
+}
+.body-img{
+    width: 430px;
+    height: 440px;
+    display: block;
+    float: left;
+    background-color: red;
+    margin-right: 28px;
+}
+.body-list{
+    width: 430px;
+    height: 320px;
+    background-color:#FFFFFF;
+    float: left;
+    margin: auto;
+}
+
+.list-one{
+    width: 403px;
+    height: 40px;
+    /* background-color: lightcoral; */
+    margin: 0 auto;
+    border-bottom: 1px solid #E4E7E8;
+}
+.list-one li {
+    width: 67px;
+    height: 40px;
+    /* background-color: lightgoldenrodyellow; */
+    float: left;
+    font-size: 16px;
+    color: #91877D;
+    line-height: 40px;
+}
+.list-one li:hover{
+    box-sizing: border-box;
+    color:red;
+    border-bottom: 2px solid #5E5572;
+}
+.list-two{
+    width: 390px;
+    height: 60px;
+    /* background-color: lightgreen; */
+    margin: auto;
+    line-height: 60px;
+    font-size:18px ;
+    color: #64587f;
+}
+.list-three{
+    width: 390px;
+    height: 210px;
+    /* background-color: lightgrey; */
+    margin: auto;
+}
+.list-three li{
+    /* box-sizing: border-box; */
+    width: 390px;
+    height: 33px;
+    border-bottom:1px  solid #E4E7E8;
+    line-height: 33px;
+    text-align: left;
+    font-size: 14px;
+    color: #666;
+}
+.list-three li span{
+    float: right;
+}
+.list-three li:hover{
+    color: red;
+}
+.body-list-img{
+    margin-top: 30px;
+    width: 430px;
+    height: 100px;
+    /* background-color: lightpink; */
+}
+.body-list-img img:nth-child(1){
+    width: 200px;
+    height: 100px;
+    margin-right:25px;
+}
+.body-zt{
+    width: 200px;
+    height:440px;
+    /* background-color: lightsalmon; */
+    float: right;
+}
+.body-zt-one{
+    width: 200px;
+    height: 180px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    margin-bottom: 22px;
+}
+.body-zt-one h1{
+    /* margin-top: 50px; */
+    width: 160px;
+    height: 45px;
+    color: #5e5572;
+    line-height: 45px;
+    font-size: 16px;
+    text-align: left;
+    /* background-color: lightseagreen; */
+    margin:0px auto;
+}
+
+.body-zt-one p{
+    width:150px;
+    height: 30px;
+    background-color: #F0F0F0;
+    text-align: left; 
+    line-height: 30px;
+    font-size: 14px;
+    color: #666;
+    margin: auto;
+    padding-left: 10px;
+}
+
+.body-zt-one p select{
+    width:150px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #F0F0F0;
+}
+.body-zt-img{
+    width: 200px;
+    height: 240px;
+    
+}
+.body-zt-img li{
+    box-sizing: border-box;
+    width: 100px;
+    height: 80px;
+    float: left;
+    background-color: #FFFFFF;
+    font-size: 12px;
+    color: #333;
+    border: 1px #F0F0F0 solid;
+    /* background-color: magenta; */
+}
+.body-zt-img li a{
+    float: right;
+    margin-right: 30px;
+    margin-top: 0px;
+    width:40px;
+    height: 50px;
+    margin-left: 20px;
+    /* background-color: blue; */
+}
+.one{
+    background: url(	https://9yin.woniu.com/static/web201588/images/nicon.png) no-repeat -28px -35px;
+}
+.two{
+    background: url(	https://9yin.woniu.com/static/web201588/images/nicon.png) no-repeat -128px -35px;
+}
+.three{
+    background: url(	https://9yin.woniu.com/static/web201588/images/nicon.png) no-repeat -205px -35px;
+}
+.fore{
+    background: url(	https://9yin.woniu.com/static/web201588/images/nicon.png) no-repeat -28px -115px;
+}
+.five{
+    background: url(	https://9yin.woniu.com/static/web201588/images/nicon.png) no-repeat -28px -195px;
+}
+.six{
+    background: url(	https://9yin.woniu.com/static/web201588/images/nicon.png) no-repeat -128px -195px;
+}
+
+.footer{
+    width: 70%;
+    height: 905px;
+    /* background-color: aqua; */
+    position: absolute;
+    top: 1070px;
+    left: 300px;
+    margin: auto;
+}
+.footer-one{
+    width: 200px;
+    height: 880px;
+    /* background-color: blanchedalmond; */
+    margin-right:29px;
+    float: left;
+}
+.footer-two{
+    width: 890px;
+    height: 880px;
+    /* background-color:gold; */
+    float: left;
+    position: relative;
+}
+.footer-three{
+    width: 200px;
+    height: 880px;
+    /* background-color:green; */
+    float: right;
+}
+.ft-one-list{
+    width: 200px;
+    height: 425px;
+    /* background: royalblue; */
+}
+.ft-one-list li{
+    width: 200px;
+    height: 85px;
+    margin-bottom: 25px;
+}
+.ft-hf{
+    width: 200px;
+    height: 81.33px;
+    margin-top:20px;
+    margin-bottom: -1px;
+    border-bottom:1px solid #999;
+    background:url(./img/icon.jpg) no-repeat 0 -181px;
+}
+.ft-hf a .ft-p1{
+    font-size: 20px;
+    padding-top: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.ft-hf a .ft-p2{
+    font-size: 12px;
+    color: #ffffff;
+}
+
+/* 精灵图 */
+.ft-one-jl1{
+    width:100px;
+    height: 90px;
+    background-color: #333333;
+    overflow: hidden;
+    /* transition: 2s; */
+}
+/* 一起写 每个i 的大小都一样 */
+
+/* .ft-one-box1 i{
+    display: block;
+    width:42px;
+    height: 41px;
+    margin: auto;
+    margin-top: 15px;
+    background: url(./img/nicon.png) no-repeat -29px -570px;
+}
+.ft-one-box2 i{
+    display: block;
+    width:42px;
+    height: 41px;
+    margin: auto;
+    margin-top: 15px;
+    background: url(./img/nicon.png) no-repeat -29px -570px;
+} */
+.ft-one-jl1 div i{
+    display: block;
+    width:42px;
+    height: 41px;
+    margin: auto;
+    margin-top: 15px;
+    background: url(./img/nicon.png) no-repeat -29px -570px;
+
+}
+.ft-one-jl1 div p{
+    color: #ffffff;
+    font-size: 12px;
+}
+.ft-one-jl1:hover .ft-one-box1{
+    margin-top: -90px;
+}
+/* 公共 部分 框的设置 */
+.ft-one-box1{
+    overflow: hidden;
+    width: 100px;
+    height: 90px;
+    transition: .5s;
+}
+.ft-one-box2{
+    overflow: hidden;
+    background-color: #E72E00;
+    width: 100px;
+    height: 90px;
+}
+/* 第二个精灵图滑动效果 */
+.ft-one-jl2{
+    width:100px;
+    height: 90px;
+    background-color: #333333;
+    overflow: hidden;
+    border: 1px solid #999;
+    box-sizing: border-box;
+}
+.ft-one-jl2 div i{
+    display: block;
+    width:42px;
+    height: 41px;
+    margin: auto;
+    margin-top: 15px;
+    background: url(./img/nicon.png) no-repeat -128px -570px;
+}
+.ft-one-jl2 div p{
+    color: #ffffff;
+    font-size: 12px;
+}
+.ft-one-jl2:hover .ft-one-box1{
+    margin-top: -90px;
+}
+/* 精灵结束 */
+.ft-listend{
+    width: 200px;
+    height:157px;
+    background:url(./img/icon.jpg) no-repeat 0 -262px;
+}
+.ft-listend p{
+    height: 12px;
+    line-height:10px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 12px;
+    color: #999;
+}
+.ft-listend a{
+    display: block;
+    width: 100%;
+    height: 48px;
+    color: #ffffff;
+    margin-left: -20px;
+    line-height: 48px;
+    padding-top: 20px;
+}
+
+.ft-two-bg{
+    width: 890px;
+    height: 415px;
+    /* background-color: sandybrown; */
+    margin-bottom: 30px;
+}
+.ft-head-nav{
+    width: 890px;
+    height: 91px;
+    /* background-color: rosybrown; */
+}
+.ft-hed-one{
+    width:870px;
+    height: 44px;
+    /* background-color: royalblue; */
+    border-bottom: 1px solid #999;
+    padding-left: 20px;
+}
+.ft-hed-one li{
+    width: 80px;
+    height: 45px;
+    /* background-color: red; */
+    float: left;
+    /* padding-left: px; */
+    margin-right: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #5e5572;
+    font-weight: bold;
+    font-size: 16px;
+}
+.ft-hed-one li:hover{
+    box-sizing: border-box;
+    border-bottom:2px solid #5E5572;
+}
+.ft-hed-two{
+    margin-top: 22px;
+    width: 100%;
+    height: 24px;
+    /* background-color: red; */
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.ft-hed-two li{
+    box-sizing: border-box;
+    /* width: 50px; */
+    height: 23px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #91877d;
+    float: left;
+    margin-right: 10px;
+}
+.ft-hed-two li:hover{
+    /* box-sizing: border-box; */
+    border-bottom: 1px solid red;
+}
+.ft-two-ftbg{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 490px;
+    height: 400px;
+    background: url(https://9yin.woniu.com/static/web201588/images/tianshanpai.png) no-repeat right 0;
+}
+.ft-two-ftbg1{
+    position: absolute;
+    z-index:-2;
+    left: 0;
+    top: 0;
+    width: 210px;
+    height: 220px;
+    background: url(	https://9yin.woniu.com/static/web201588/images/tsp-z.png) no-repeat right 0;
+}
+.ft-dibu{
+    width: 300px;
+    height: 180px;
+    /* background-color: red; */
+    position: absolute;
+    top: 235px;
+}
+.ft-dibu{
+    padding-left: 10px;
+    font-size:14px ;
+    /* line-height: ; */
+    color: #666;
+    text-align: left;
+}
+.ft-dibu div{
+    margin-bottom: 9px;
+}
+.ft-dibu .hd-lword span{
+    margin-right: 10px;
+}
+.c33{
+    color: black;
+}
+
+.ft-two-img{
+    display: flex;
+    width: 100%;
+    height:420px;
+    /* background-color: skyblue; */
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+    /* align-items:flex-start */
+}
+.ft-two-img li{
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-bottom: 20px;
+    
+}
+.ft-two-img li:nth-child(7){
+    width: 430px;
+    height: 200px;
+    /* background-color: slateblue; */
+}
+
+.enli ul{
+    width: 390px;
+    height: 150px;
+    background-color:#FFFFFF;
+    margin: auto;
+    /* margin-top: 20px; */
+}
+.enli ul li{
+    width: 390px;
+    height: 31px;
+    /* background-color: red; */
+    margin: 0;
+    text-align: left;
+    line-height: 31px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+.enli ul li:nth-child(1){
+    text-align: center;
+    width: 390px;
+    height: 40px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #E6E6E6;
+}
+.enli ul li a{
+    display: inline-block;
+    font-size: 20px;
+    /* height: 40px; */
+    padding-left: 30px;
+    color: #5e5572;
+    line-height: 40px;
+    margin-right: 40px;
+}
+.enli ul li a:hover{
+    border-bottom: 2px solid #698BB8;
+    color: #5E5572;
+}
+.enli ul li:hover{
+    color: red;
+}
+
+.ft-three-list1{
+    width: 160px;
+    height: 625px;
+    background-color: #ffffff;
+    margin: auto;
+}
+.ft-three-list1 h2{
+    text-align: left;
+    height: 30px;
+    padding-top: 10px;
+    font-size: 16px;
+    color: #5e5572; 
+    font-weight: bold;
+    border-bottom: 1px solid #e6e6e6;
+    padding-left: 5px;
+}
+
+.endlis1{
+    width:160px;
+    height: 182px;
+    /* background-col/or: #999;    */
+
+}
+.endlis1 li{
+    height: 27px;
+    float: left;
+    text-align: center;
+    line-height: 27px;
+    margin-top: 3px;
+    padding-left: 7px;
+    font-size: 14px;
+
+}
+.end-img-list{
+    margin: auto;
+    margin-top: 40px;
+    width: 160px;
+    height: 200px;
+    background-color: #FFFFFF;
+}
+.end-img-list h2{
+    text-align: left;
+    height: 30px;
+    padding-top: 10px;
+    font-size: 16px;
+    color: #5e5572; 
+    font-weight: bold;
+    /* border-bottom: 1px solid #e6e6e6; */
+    padding-left: 5px;
+}
+.end-img-list ul {
+    margin-top: 10px;
+}
+.end-img-list ul li{
+    width:72px;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    margin: 0 8px 10px 0 ;
+    height: 28px;
+    /* background-color: aqua; */
+    float: left;
+}
+.end-img-list ul li img{
+    width: 72px;
+    height: 24px;
+}
+.footer-three ul li:hover{
+    color: red;
+    cursor: pointer;
+}
